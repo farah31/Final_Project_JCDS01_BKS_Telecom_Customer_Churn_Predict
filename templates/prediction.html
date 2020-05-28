@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Telecommunication Company Customer Churn Prediction</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper ">
+    <div class="sidebar" data-color="azure" data-background-color="white">
+      <div class="logo">
+        <a href="#0" class="simple-text logo-mini">
+          WELCOME!
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="http://localhost:4400/profiling">
+              <i class="material-icons">person</i>
+              <p>Current Customers Profile</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="http://localhost:4400/insight">
+              <i class="material-icons">content_paste</i>
+              <p>Insight</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:;">Generator</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <!-- Input Navbar -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <!-- Input Content -->
+          <center>
+          <br>
+          <br>
+          <h3>Telecommunication Company Customer Churn Prediction Generator</h3>
+          <br>
+          <br>
+            <!-- Categorical Input -->
+          <form method="POST" action="http://localhost:4400/result">
+           <div class="form-row" style="width: 800px">
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="gender">Gender</label>
+              <select name="gender" class="form-control">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="SeniorCitizen">Senior Citizen</label>
+              <select name="SeniorCitizen" class="form-control">
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+              </select>
+             </div>
+             <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="Partner">Partner</label>
+              <select name="Partner" class="form-control">
+               <option value="y">Yes</option>
+               <option value="n">No</option>
+              </select>
+             </div>
+             <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="Dependents">Dependents</label>
+              <select name="Dependents" class="form-control">
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+              </select>
+             </div>
+             <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="PhoneService">Phone Service</label>
+              <select name="PhoneService" class="form-control">
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+              </select>
+             </div>
+             <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="MultipleLines">Multiple Lines</label>
+              <select name="MultipleLines" class="form-control">
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+                <option value="n_p">No Phone Service</option>
+              </select>
+             </div>
+             <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="InternetService">Internet Service</label>
+              <select name="InternetService" class="form-control">
+               <option value="dsl">DSL</option>
+               <option value="fo">Fiber Optic</option>
+               <option value="n">No Internet Service</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="OnlineSecurity">Online Security</label>
+              <select name="OnlineSecurity" class="form-control">
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+             <label for="OnlineBackup">Online Backup</label>
+             <select name="OnlineBackup" class="form-control">
+               <option value="y">Yes</option>
+               <option value="n">No</option>
+             </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+             <label for="DeviceProtection">Device Protection</label>
+             <select name="DeviceProtection" class="form-control">
+               <option value="y">Yes</option>
+               <option value="n">No</option>
+             </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="TechSupport">Technology Support</label>
+              <select name="TechSupport" class="form-control">
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="StreamingTV">Streaming TV</label>
+              <select name="StreamingTV" class="form-control">
+               <option value="y">Yes</option>
+               <option value="n">No</option>
+             </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+             <label for="StreamingMovies">Streaming Movies</label>
+             <select name="StreamingMovies" class="form-control">
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+             </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+             <label for="Contract">Contract</label>
+             <select name="Contract" class="form-control">
+               <option value="mtm">Month to Month</option>
+               <option value="one">1 Year</option>
+               <option value="two">2 Year</option>
+             </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="PaperlessBilling">Paperless Billing</label>
+              <select name="PaperlessBilling" class="form-control">
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3" style="width: 120px" required="required">
+              <label for="PaymentMethod">Payment Method</label>
+              <select name="PaymentMethod" class="form-control">
+                <option value="bt">Bank Transfer (Automatic)</option>
+                <option value="cc">Credit Card (Automatic)</option>
+                <option value="ec">Electronic Check</option>
+                <option value="mc">Mailed Check</option>
+              </select>
+            </div>
+           </div>
+
+            <!-- Numerical Input -->
+            <div class="form-row" style="width: 750px">
+            <div class="form-group col-md-4" required="required">
+             <label for="tenure">Tenure</label>
+             <input type="number" step= "1" min="0" max="9999" class="form-control" style="width: 200px" name="tenure" placeholder="0">
+            </div>
+            <div class="form-group col-md-4" required="required">
+             <label for="MonthlyCharges">Monthly Charges</label>
+             <input type="number" step= "1" min="0" max="9999" class="form-control" style="width: 200px" name="MonthlyCharges" placeholder="0">
+            </div>
+            <div class="form-group col-md-4" required="required">
+              <label for="TotalCharges">Total Charges</label>
+              <input type="number" step= "1" min="0" max="999999" class="form-control" style="width: 200px" name="TotalCharges" placeholder="0">
+            </div>
+            </div>
+
+            <br>
+            <br>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-outline-info" style="width: 720px">
+               PREDICT NOW
+            </button>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, Final Project JCDS-01 Purwadhika Bekasi by Alfarah Johantika.
+          </div>
+          <!-- Input Footer -->
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
