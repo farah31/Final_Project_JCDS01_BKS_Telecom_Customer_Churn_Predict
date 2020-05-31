@@ -28,7 +28,15 @@ PREDICTION PAGE
 ![](https://github.com/farah31/Final_Project_JCDS01_BKS_Telecom_Customer_Churn_Predict/blob/master/img/Capture1.JPG)
 
 The application user can input data as described below:
+
 ![](https://github.com/farah31/Final_Project_JCDS01_BKS_Telecom_Customer_Churn_Predict/blob/master/img/Capture4.JPG)
+
+PREDICTION RESULT
+---
+Customer will be churn
+![](https://github.com/farah31/Final_Project_JCDS01_BKS_Telecom_Customer_Churn_Predict/blob/master/img/Capture7.JPG)
+Customer will be exit
+![](https://github.com/farah31/Final_Project_JCDS01_BKS_Telecom_Customer_Churn_Predict/blob/master/img/Capture6.JPG)
 
 CURRENT CUSTOMER PROFILE PAGE
 ---
