@@ -70,7 +70,7 @@ def result ():
         PhoneService = input['PhoneService']
         strphone = ''
         phone = int()
-        if phoneService == 'y':
+        if PhoneService == 'y':
             phone = 1
             strphone = 'Yes'
         else:
@@ -223,25 +223,25 @@ def result ():
             mc = 1
             strpm = 'Mailed check'
         #tenure
-        tenure = int(input['tenure'])
+        tenure = float(input['tenure'])
         #MonthlyCharges
-        MonthlyCharges = int(input['MonthlyCharges'])
+        MonthlyCharges = float(input['MonthlyCharges'])
         #TotalCharges
-        TotalCharges = int(input['TotalCharges'])
+        TotalCharges = float(input['TotalCharges'])
 
         
         #Result
-        datainput = [[fem, mal, dsl, fo, no, mtm, one, two, bt, cc, ec, mc, sc, prt, dpd, tenure, phone, ml, os, ob, dp, ts, tv, mv, pb, MonthlyCharges, TotalCharges]]
+        datainput = [[fem, mal, dsl, fo, n, mtm, one, two, bt, cc, ec, mc, sc, prt, dpd, tenure, phone, ml, os, ob, dp, ts, tv, mv, pb, MonthlyCharges, TotalCharges]]
         scaled = scaler.transform(datainput)
         pred = modelfix.predict(scaled)[0]
         proba = modelfix.predict_proba(scaled)[0]
         if pred == 0:
             prbb = round((proba[0]*100), 1)
-            rslt = "EXIT"
+            rslt = "CHURN"
             color = "tomato"
         else:
             prbb = round((proba[1]*100), 1)
-            rslt = "CHURN"
+            rslt = "EXIT"
             color = "mediumaquamarine"
         
         # return render_template('result.html')
@@ -251,8 +251,8 @@ def result ():
             StreamingTV=strtv, StreamingMovies=strmv, PaperlessBilling=strpb, MonthlyCharges=MonthlyCharges, TotalCharges=TotalCharges, result= rslt, proba = prbb, color = color)
 
 
-if __name__ == '__main__':
-    modelfix = joblib.load('model')
-    scaler = joblib.load('scalermodel')
+if __name__ == "__main__":
+    modelfix = joblib.load("modelfix")
+    scaler = joblib.load("scalermodel")
     
     app.run(debug=True, port=4400)
