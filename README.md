@@ -59,3 +59,4 @@ CURRENT CUSTOMER PROFILE PAGE
 INSIGHT STATISTIC PAGE
 ---
 ![](https://github.com/farah31/Final_Project_JCDS01_BKS_Telecom_Customer_Churn_Predict/blob/master/img/Capture3.JPG)
+
