@@ -237,7 +237,7 @@ def result ():
         proba = modelfix.predict_proba(scaled)[0]
         if pred == 0:
             prbb = round((proba[0]*100), 1)
-            rslt = "CHURN"
+            rslt = "RETAIN"
             color = "tomato"
         else:
             prbb = round((proba[1]*100), 1)
